@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/229da5bd34.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -10,21 +11,21 @@
 </head>
 
 <body>
-    <div class="container border border-secondary rounded">
+    <div class="container border border-secondary rounded mt-5">
         <form class="row g-3">
-            <div class="col-12">
+            <div class="col-md-12 border-bottom border-secondary roudes bg-light">
                 <h1>Paymetn for Example</h1>
             </div>
-            <div class="col-5">
+            <div class="col-md-5">
                 <label for="validationCard" class="form-label">Card #</label>
-                <input type="password" class="form-control" id="validationCard" value="" placeholder="xxxxxxxx" required>
+                <input type="number" class="form-control" id="validationCard" value="" placeholder="xxxxxxxx" required>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <label for="validationCVC" class="form-label">CVC #</label>
                 <input type="number" class="form-control" id="validationCVC" value="" placeholder="0000" required>
             </div>
-            <div class="col-4">
-                <label for="validationAmount" class="form-label">Amount</label>
+            <div class="col-md-4">
+                <i class="fa-solid fa-dollar-sign"></i><label for="validationAmount" class="form-label">Amount</label>
                 <input type="text" class="form-control" id="validationAmount" value="Mark" required>
             </div>
 
@@ -53,22 +54,25 @@
                 <input type="number" class="form-control" id="validationDefault05" required>
             </div>
 
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="form-check">
-                        <input type="radio" name="card">Visa
-                        <input type="radio" name="card">Mastercard
-                        <input type="radio" name="card">DinnerPlus
-                        <input type="radio" name="card">American Express
+                        <div class="bg-secondary w-25%">
+                            <input type="radio" name="card"><i class="fa-brands fa-cc-visa"></i>
+                            <input type="radio" name="card"><i class="fa-brands fa-cc-mastercard"></i>
+                            <input type="radio" name="card"><i class="fa-brands fa-cc-diners-club"></i>
+                            <input type="radio" name="card"><i class="fa-brands fa-cc-amex"></i>
+                        </div>
+
 
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div>
-                        Message <textarea name="Message" id="" cols="70" rows="5"></textarea>
+                        Message <textarea name="Message" id="" cols="63" rows="5"></textarea>
                     </div>
                 </div>
 
-            <div class="col-12 d-flex justify-content-end">
+            <div class="col-md-12 d-flex justify-content-end">
                 <button class="btn btn-primary" type="submit">Cancel</button>
                 <button class="btn btn-primary ms-1" type="submit">Send</button>
             </div>
